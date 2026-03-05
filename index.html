@@ -69,28 +69,28 @@ section{position:relative;z-index:1;padding:7rem 5%}
 .stat-card:nth-child(4){background:linear-gradient(135deg,#FEF3EE,#FDDBC8)}
 .stat-num{font-family:'Lora',serif;font-size:2.5rem;font-weight:700;color:var(--ink);line-height:1;margin-bottom:.35rem}
 .stat-label{font-size:.68rem;font-weight:500;color:var(--ink-soft);letter-spacing:.06em;text-transform:uppercase}
-#about{background:var(--paper2)}
-.about-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;align-items:center}
-.about-visual{position:relative;display:flex;justify-content:center;align-items:center;min-height:320px}
-.about-ring{width:300px;height:300px;border-radius:50%;border:1.5px dashed rgba(45,106,79,.25);position:absolute;animation:spin 30s linear infinite}
-.about-ring2{width:240px;height:240px;border-radius:50%;border:1px solid rgba(45,106,79,.15);position:absolute;animation:spin 20s linear infinite reverse}
+#about{background:var(--paper2);padding:5rem 5%}
+.about-grid{display:grid;grid-template-columns:280px 1fr;gap:3.5rem;align-items:start}
+.about-visual{position:relative;display:flex;justify-content:center;align-items:center}
+.about-ring{width:320px;height:320px;border-radius:50%;border:1.5px dashed rgba(45,106,79,.22);position:absolute;animation:spin 30s linear infinite}
+.about-ring2{width:260px;height:260px;border-radius:50%;border:1px solid rgba(45,106,79,.13);position:absolute;animation:spin 20s linear infinite reverse}
 @keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
-.about-avatar{width:190px;height:190px;border-radius:50%;position:relative;z-index:1;box-shadow:0 8px 40px rgba(45,106,79,.18);border:3px solid rgba(45,106,79,.25);background:linear-gradient(135deg,#D1EBD9,#A8D5B5);display:flex;align-items:center;justify-content:center;overflow:hidden;transition:transform .4s cubic-bezier(.22,1,.36,1),box-shadow .4s}
-.about-avatar:hover{transform:scale(1.04);box-shadow:0 14px 50px rgba(45,106,79,.28)}
+.about-avatar{width:220px;height:220px;border-radius:50%;position:relative;z-index:1;box-shadow:0 12px 48px rgba(45,106,79,.22);border:3px solid rgba(45,106,79,.25);background:linear-gradient(135deg,#D1EBD9,#A8D5B5);display:flex;align-items:center;justify-content:center;overflow:hidden;transition:transform .4s cubic-bezier(.22,1,.36,1),box-shadow .4s}
+.about-avatar:hover{transform:scale(1.04);box-shadow:0 18px 56px rgba(45,106,79,.3)}
 .about-avatar img{width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:50%;display:block;position:absolute;inset:0}
-.about-avatar .initials{font-family:'Lora',serif;font-size:3.2rem;font-weight:700;color:var(--green);opacity:.6;user-select:none}
+.about-avatar .initials{font-family:'Lora',serif;font-size:3.8rem;font-weight:700;color:var(--green);opacity:.6;user-select:none}
 .about-avatar::after{content:'';position:absolute;inset:0;border-radius:50%;background:linear-gradient(160deg,rgba(255,255,255,0.12) 0%,transparent 60%);pointer-events:none;z-index:2}
-.about-dot{position:absolute;width:12px;height:12px;border-radius:50%;border:2px solid white;box-shadow:0 2px 8px rgba(0,0,0,.15);z-index:3}
-.about-dot:nth-child(3){top:18px;right:55px;background:var(--green);animation:dotPulse 3s ease-in-out infinite}
-.about-dot:nth-child(4){bottom:28px;left:45px;background:#F59E0B;animation:dotPulse 3s ease-in-out 1s infinite}
-.about-dot:nth-child(5){top:78px;left:18px;background:#0891B2;animation:dotPulse 3s ease-in-out 2s infinite}
+.about-dot{position:absolute;width:11px;height:11px;border-radius:50%;border:2px solid white;box-shadow:0 2px 8px rgba(0,0,0,.15);z-index:3}
+.about-dot:nth-child(3){top:22px;right:44px;background:var(--green);animation:dotPulse 3s ease-in-out infinite}
+.about-dot:nth-child(4){bottom:32px;left:36px;background:#F59E0B;animation:dotPulse 3s ease-in-out 1s infinite}
+.about-dot:nth-child(5){top:88px;left:14px;background:#0891B2;animation:dotPulse 3s ease-in-out 2s infinite}
 @keyframes dotPulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.5);opacity:.7}}
-.about-note{font-family:'Caveat',cursive;font-size:1.1rem;color:var(--green-mid);margin-bottom:1.5rem;padding:.5rem .75rem;border-left:3px solid var(--green-light);background:rgba(45,106,79,.04);border-radius:0 6px 6px 0;line-height:1.6}
-.about-body{font-size:.95rem;color:var(--ink-mid);line-height:1.9;margin-bottom:1.2rem}
+.about-note{font-family:'Caveat',cursive;font-size:1rem;color:var(--green-mid);margin-bottom:1.1rem;padding:.45rem .7rem;border-left:3px solid var(--green-light);background:rgba(45,106,79,.04);border-radius:0 6px 6px 0;line-height:1.55}
+.about-body{font-size:.88rem;color:var(--ink-mid);line-height:1.82;margin-bottom:.9rem}
 .about-body strong{color:var(--ink);font-weight:500}
 .about-body em{font-style:italic;color:var(--green-mid)}
-.about-chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.75rem}
-.about-chip{display:flex;align-items:center;gap:.4rem;background:var(--card);border:1.5px solid var(--border);border-radius:100px;padding:.28rem .9rem;font-size:.75rem;font-weight:500;color:var(--ink-mid);box-shadow:0 2px 8px var(--shadow);transition:transform .2s,box-shadow .2s}
+.about-chips{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1.25rem}
+.about-chip{display:flex;align-items:center;gap:.4rem;background:var(--card);border:1.5px solid var(--border);border-radius:100px;padding:.22rem .8rem;font-size:.72rem;font-weight:500;color:var(--ink-mid);box-shadow:0 2px 8px var(--shadow);transition:transform .2s,box-shadow .2s}
 .about-chip:hover{transform:translateY(-2px);box-shadow:0 6px 16px var(--shadow2);border-color:var(--border2)}
 #projects{background:var(--paper)}
 .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
@@ -112,10 +112,13 @@ section{position:relative;z-index:1;padding:7rem 5%}
 .tag.v{background:rgba(180,83,9,.06);border-color:rgba(180,83,9,.16);color:var(--amber)}
 #experience{background:var(--paper2)}
 .exp-list{display:flex;flex-direction:column;gap:1rem}
-.exp-card{background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius);padding:2rem 2.25rem;display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:start;box-shadow:0 2px 12px var(--shadow);transition:transform .3s,box-shadow .3s;position:relative;overflow:hidden}
+.exp-card{background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius);padding:2rem 2.25rem;display:grid;grid-template-columns:48px 1fr auto;gap:1.5rem;align-items:start;box-shadow:0 2px 12px var(--shadow);transition:transform .3s,box-shadow .3s;position:relative;overflow:hidden}
 .exp-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--green),var(--green-light));opacity:0;transition:opacity .3s}
 .exp-card:hover{transform:translateX(4px);box-shadow:0 10px 30px var(--shadow2);border-color:var(--border2)}
 .exp-card:hover::before{opacity:1}
+.exp-logo{width:48px;height:48px;border-radius:10px;background:var(--paper2);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;font-size:.65rem;font-weight:700;color:var(--green);letter-spacing:.02em}
+.exp-logo img{width:100%;height:100%;object-fit:contain;padding:6px;position:absolute;inset:0}
+.exp-logo{position:relative}
 .exp-role{font-family:'Lora',serif;font-size:1.1rem;font-weight:600;margin-bottom:.2rem;color:var(--ink)}
 .exp-co{font-size:.78rem;color:var(--green-mid);font-weight:500;margin-bottom:.8rem}
 .exp-pts{list-style:none;display:flex;flex-direction:column;gap:.45rem}
@@ -183,7 +186,8 @@ footer{position:relative;z-index:1;border-top:1.5px solid var(--border);backgrou
 .footer-links a{font-size:.75rem;color:var(--ink-soft);text-decoration:none;transition:color .2s}
 .footer-links a:hover{color:var(--green)}
 @media(max-width:960px){
-  .hero-grid,.about-grid{grid-template-columns:1fr;gap:3rem}
+  .hero-grid{grid-template-columns:1fr;gap:3rem}
+  .about-grid{grid-template-columns:1fr;gap:2.5rem}
   .hero-stats{grid-template-columns:repeat(4,1fr)}
   .proj-grid{grid-template-columns:1fr 1fr}
   .proj-card.wide{grid-column:span 2}
@@ -226,7 +230,7 @@ footer{position:relative;z-index:1;border-top:1.5px solid var(--border);backgrou
       <h1 class="hero-name reveal d1"><span class="shimmer">Michelle</span><br>Varghese<span class="sub">AI &amp; Software Engineer</span></h1>
       <p class="hero-desc reveal d2">Grad student at NC State specializing in AI. <strong>Large language models, agentic systems, multimodal AI, video understanding.</strong> If it is at the intersection of making AI actually work in the real world, I am interested.</p>
       <div class="hero-cta reveal d3">
-        <a href="mailto:mmvarghe@gmail.com" class="btn btn-primary"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>Get in Touch</a>
+        <a href="/cdn-cgi/l/email-protection#4b26263d2a392c232e0b2c262a222765282426" class="btn btn-primary"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>Get in Touch</a>
         <a href="https://linkedin.com/in/michelle-varghese" target="_blank" class="btn btn-ghost">LinkedIn</a>
         <a href="https://github.com/michellevarghese" target="_blank" class="btn btn-ghost">GitHub</a>
       </div>
@@ -247,18 +251,18 @@ footer{position:relative;z-index:1;border-top:1.5px solid var(--border);backgrou
       <div class="about-ring2"></div>
       <div class="about-avatar">
         <span class="initials">MV</span>
-        <img src="./michelle.png" alt="Michelle Varghese" onerror="this.style.display='none'">
+        <img src="./michelle.jpg" alt="Michelle Varghese" onerror="this.style.display='none'">
         <div class="about-dot"></div>
         <div class="about-dot"></div>
         <div class="about-dot"></div>
       </div>
     </div>
     <div>
-      <div class="sh reveal"><div class="sh-label">00 — About Me</div><h2 class="sh-title">Hi, I am <em>Michelle</em></h2></div>
-      <div class="about-note reveal d1">Large language models, agentic systems, multimodal AI, video understanding. Basically, if it is at the intersection of making AI actually work in the real world, I am interested.</div>
-      <p class="about-body reveal d2">I grew up in Bangalore, and college was honestly just me saying yes to everything - hackathons, research, teaching web dev to anyone who would sit still long enough. My undergrad research? I built an AI that watches you work out and tells you you are doing it wrong. Spent months convincing people to do squats, lunges, and jumping jacks in front of a camera. Turns out <em>"for the advancement of science"</em> is a surprisingly effective pitch. <a href="https://ieeexplore.ieee.org/document/10089773" target="_blank" style="color:var(--green);font-weight:500;text-decoration:underline;text-underline-offset:3px">Published it at IEEE.</a> Won a few hackathons along the way - somewhere in between all of that figured out two things: that I loved building, and I loved teaching people how to build.</p>
-      <p class="about-body reveal d3">Straight out of undergrad I joined <strong>IDFC First Bank</strong> as a software developer - full stack, real users, real stakes. But I knew I wanted to go deeper on AI, so I packed up and came to <strong>NC State</strong> for my Masters. That summer I interned at <strong>LexisNexis</strong> - a legal AI company - working on systems handling <strong>300 million+ court dockets</strong>. Good problems. Humbling scale.</p>
-      <p class="about-body reveal d4">Now I am at NC State going deep on the tough stuff - how do you make LLMs reliable? How do you get vision, language, and audio to reason together? The problems are hard, the field moves fast - <em>somebody has gotta solve them, might as well be me.</em></p>
+      <div class="sh reveal" style="margin-bottom:1.2rem"><div class="sh-label">00 — About Me</div><h2 class="sh-title">Hi, I am <em>Michelle</em></h2></div>
+      <div class="about-note reveal d1">Large language models, agentic systems, multimodal AI, video understanding. If it is at the intersection of making AI actually work in the real world, I am interested.</div>
+      <p class="about-body reveal d2">I grew up in Bangalore saying yes to everything — hackathons, research, teaching web dev to anyone who would sit still. My undergrad research: an AI that watches you work out and judges your form. Spent months convincing people to do squats in front of a camera <em>"for the advancement of science."</em> <a href="https://ieeexplore.ieee.org/document/10089773" target="_blank" style="color:var(--green);font-weight:500;text-decoration:underline;text-underline-offset:3px">Published it at IEEE.</a> Won hackathons along the way. Figured out I loved building — and teaching people to build.</p>
+      <p class="about-body reveal d3">Post-undergrad: <strong>IDFC First Bank</strong> as a full-stack developer. Then <strong>NC State</strong> for my Masters, and a summer at <strong>LexisNexis</strong> working on systems handling <strong>300M+ court dockets</strong>.</p>
+      <p class="about-body reveal d4">Now going deep on the hard stuff — LLM reliability, multimodal reasoning, vision + language + audio. <em>Somebody has gotta solve them, might as well be me.</em></p>
       <div class="about-chips reveal d5">
         <div class="about-chip"><span>📍</span> Raleigh, NC</div>
         <div class="about-chip"><span>🎓</span> NC State University</div>
@@ -302,21 +306,25 @@ footer{position:relative;z-index:1;border-top:1.5px solid var(--border);backgrou
     <div class="sh reveal"><div class="sh-label">02 — Experience</div><h2 class="sh-title"><em>Work Experience</em></h2></div>
     <div class="exp-list">
       <div class="exp-card reveal">
+        <div class="exp-logo"><img src="./lexisnexis.png" alt="LexisNexis" onerror="this.style.display='none'">LN</div>
         <div><div class="exp-role">Software Engineering Intern</div><div class="exp-co">LexisNexis · Raleigh, NC</div>
           <ul class="exp-pts"><li>Built Java/Oracle SQL apps for CourtLink (300M+ dockets) - reduced alert recovery from ~10 min to under 30 sec, eliminating redundant emails across ~20 weekly failures.</li><li>Enhanced publisher pipeline with job-ID logging, API integrations, telemetry, and scalability improvements.</li></ul>
         </div><span class="exp-date">June – Aug 2025</span>
       </div>
       <div class="exp-card reveal d1">
+        <div class="exp-logo"><img src="./idfc.svg" alt="IDFC First Bank" onerror="this.style.display='none'">IB</div>
         <div><div class="exp-role">Full-Time Software Developer</div><div class="exp-co">IDFC First Bank · Bangalore, India</div>
           <ul class="exp-pts"><li>Integrated CleverTap telemetry APIs across React, Go, and Java systems, enabling data-driven product decisions through user funnel tracking.</li><li>Extended Kafka-based workflows for automated notifications - drove 20% conversion increase across banking products.</li></ul>
         </div><span class="exp-date">July 2023 – July 2024</span>
       </div>
       <div class="exp-card reveal d2">
+        <div class="exp-logo"><img src="./idfc.svg" alt="IDFC First Bank" onerror="this.style.display='none'">IB</div>
         <div><div class="exp-role">Software Engineering Intern</div><div class="exp-co">IDFC First Bank · Bangalore, India</div>
           <ul class="exp-pts"><li>Led NotaryLive API integration via Spring Boot and React, improving customer trust with a secure, extensible integration.</li><li>Built a cross-platform task management app in Go, React, and Flutter.</li></ul>
         </div><span class="exp-date">Feb – July 2023</span>
       </div>
       <div class="exp-card reveal d3">
+        <div class="exp-logo"><img src="./pes.png" alt="PES University" onerror="this.style.display='none'">PES</div>
         <div><div class="exp-role">Machine Learning Summer Intern</div><div class="exp-co">Centre for Cloud Computing and Big Data, PES University</div>
           <ul class="exp-pts"><li>Improved multilingual model training pipelines using Allosaurus universal phone recognizer (2000+ languages), achieving ~17% accuracy gain on regional languages.</li></ul>
         </div><span class="exp-date">June – Aug 2021</span>
@@ -416,7 +424,7 @@ footer{position:relative;z-index:1;border-top:1.5px solid var(--border);backgrou
     <p class="contact-sub reveal d2">The problems are hard, the field moves fast - if you are working on something interesting in AI, I would love to hear about it. Open to research collaborations, full-time roles, or just a good conversation.</p>
     <span class="contact-sign reveal d3">- Michelle</span>
     <div class="contact-links reveal d4">
-      <a href="mailto:mmvarghe@gmail.com" class="btn btn-primary"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>mmvarghe@gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#375a5a415645505f5277505a565e5b1954585a" class="btn btn-primary"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg><span class="__cf_email__" data-cfemail="751818031407121d10351218141c195b161a18">[email&#160;protected]</span></a>
       <a href="https://linkedin.com/in/michelle-varghese" target="_blank" class="btn btn-ghost">LinkedIn</a>
       <a href="https://github.com/michellevarghese" target="_blank" class="btn btn-ghost">GitHub</a>
     </div>
@@ -432,7 +440,7 @@ footer{position:relative;z-index:1;border-top:1.5px solid var(--border);backgrou
   </ul>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function goTo(id){var el=document.getElementById(id);if(!el)return;window.scrollTo({top:el.getBoundingClientRect().top+window.pageYOffset-72,behavior:'smooth'});}
 window.addEventListener('scroll',function(){document.getElementById('nav').classList.toggle('scrolled',window.scrollY>30);});
 var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in');});},{threshold:0.07});
